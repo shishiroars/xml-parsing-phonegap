@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CATALOG>
+	<CD>
+		<TITLE>HUMAN</TITLE>
+		<CITY>JAKARTA</CITY>
+		<ID>001</ID>
+	</CD>
+	
+	<CD>
+		<TITLE>ROBOT</TITLE>
+		<CITY>NY</CITY>
+		<ID>002</ID>
+	</CD>
+	
+	<CD>
+		<TITLE>RAJINIKANT</TITLE>
+		<CITY>CHENNAI</CITY>
+		<ID>003</ID>
+	</CD>
+	
+	<CD>
+		<TITLE>DUMAN</TITLE>
+		<CITY>Somaloj</CITY>
+		<ID>004</ID>
+	</CD>
+	
+	<CD>
+		<TITLE>L1</TITLE>
+		<CITY>NEW DELHI</CITY>
+		<ID>005</ID>
+	</CD>
+	
+	<CD>
+		<TITLE>L2</TITLE>
+		<CITY>BOMBAY</CITY>
+		<ID>006</ID>
+	</CD>
+</CATALOG>
+
+
