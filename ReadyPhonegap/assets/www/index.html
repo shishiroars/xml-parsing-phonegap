@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ready Phonegap</title>
+        
+        <!-- meta declaration starts -->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- meta declaration ends -->
+        
+        <!-- jquery mobile css starts -->
+        <link rel="stylesheet" href="css/jquerymobile/jquery.mobile-1.2.0.css" />
+        <!-- jquery mobile css ends -->
+        
+        <!-- custom css starts -->
+        <link rel="stylesheet" href="css/toast/jquery.toastmessage.css" />
+        <!-- custom css ends -->
+        
+        
+        <!-- custom app css starts -->
+        <link rel="stylesheet" href="css/app/custom.css" />
+        <!-- custom app css ends -->
+        
+        
+        
+        <style>
+        .ChangeBG
+        {
+			background-color:#7a7777;
+			color:white;
+		}
+        </style>
+        
+        <!-- script to detect device starts -->
+        <script type="application/javascript">
+			var userAgent = navigator.userAgent + '';
+			if( (userAgent.indexOf('iPhone') > -1) || (userAgent.indexOf('iPad') > -1)  || (userAgent.indexOf( "iPod" ) > -1) )
+			{
+				document.write('<script src="js/cordova/cordova-2.7.0-iphone.js"></sc' + 'ript>');
+				
+				// device is ios
+				var deviceType = 'ios';
+				
+				//alert(deviceType);
+				
+				// isDevice
+				var isDevice = true;
+				
+				
+				
+			}
+			else if(userAgent.indexOf('Android') > -1)
+			{
+				document.write('<script src="js/cordova/cordova-2.3.0-android.js"></sc' + 'ript>');
+							
+				// device is android
+				var deviceType = 'android';
+				
+				//alert(deviceType);
+				// isDevice
+				var isDevice = true;
+			}
+			else
+			{
+				document.write('<script src="js/cordova/cordova-2.1.0-android.js"></sc' + 'ript>');
+				
+				// device is web browser
+				var deviceType = 'web_browser';
+				
+				//alert(deviceType);
+				// isDevice
+				var isDevice = false;
+			}
+        </script>
+       	<script>
+		var _gaq = [['_setAccount', 'UA-19824700-1'], ['_trackPageview']];
+		(function(d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+	
+        <!-- script to detect device ends -->
+        
+  
+		
+		
+		
+       <!-- jquery script starts -->
+		<script type="text/javascript" charset="utf-8" src="js/jquery/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery/jquery-ui-1.9.1.custom.min.js"></script>
+        <!-- jquery script ends -->
+        
+        
+        
+         
+         
+        <!-- custom general (common) functions script starts -->
+        <script type="text/javascript" charset="utf-8" src="js/app/common_functions.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/app/app.js"></script>
+        <!-- custom general (common) functions script ends -->
+		
+		<!-- custom toastmessage script starts -->
+        <script type="text/javascript" charset="utf-8" src="js/toast/jquery.toastmessage.js"></script>
+        <!-- custom toastmessage script ends -->
+       
+        
+   
+   
+        <!-- jquery mobile default settings starts -->
+        <script type="text/javascript">
+			
+			$(document).bind("mobileinit", function () {
+				
+				$.mobile.defaultPageTransition = 'none';
+				$.mobile.touchOverflowEnabled = true;
+				$.mobile.transitionFallbacks.pop = 'none';
+				
+				
+
+			});
+		
+				
+			document.addEventListener("deviceready", onDeviceReady, false);
+			
+			
+		</script>
+        <!-- jquery mobile default settings ends -->
+                
+        <!-- jquery mobile script starts -->
+        <!-- jquery mobile script starts -->
+        <script type="text/javascript" charset="utf-8" src="js/jquerymobile/jquery.mobile-1.2.0.min.js"></script>
+        <!-- jquery mobile script ends -->
+       
+
+    </head>
+
+<body >
+    
+    	        
+ <!-- First page starts -->
+   <div data-role="page" id="firstPage" data-fullscreen="false" data-transition="slide">
+        
+     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+       <h1>PROGRAMS</h1>
+                
+     </div><!-- header -->
+            
+     <div data-role="content" >	
+         <a href="javascript:void(0)" onclick="ParseXml()" data-role="button">Link button</a>   						
+        <div id ="myDiv"></div>
+	 </div><!-- content -->
+            
+     <div data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">            	
+ 			<h3>Footer</h3>
+     </div><!-- /footer -->
+        
+ </div><!-- page -->
+ <!-- First page ends -->
+        
+   
+   
+   
+ <!-- Second page starts -->
+    <div data-role="page" id="secondPage" data-fullscreen="false" data-transition="slide">
+	 <div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<h1>DETAILS</h1>     
+     </div><!-- header -->
+        
+        
+     <div data-role="content">
+	   
+	 </div>
+    
+     <div data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">            	
+        	<h3>Footer</h3>
+     </div><!-- /footer -->
+    </div><!-- page -->
+ <!-- Second page ends -->  
+		
+
+  
+    </body>
+</html>
